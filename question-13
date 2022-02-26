@@ -1,0 +1,23 @@
+#Q1.Write a Python function to create the HTML string with tags around the word(s).  
+Sample function and result :
+add_tags('i', 'Python') -> '<i>Python</i>'
+add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
+
+s = input("enter HTML tags: ")
+t1=s[0]
+t2 = s[2:]
+print("<{0}>{1}</{0}>".format(t1,t2))
+
+#Q2.Write a Python function to get a string made of 4 copies of the last two characters of a specified string (length must be at least 2).  
+Sample function and result :
+insert_end('Python') -> onononon
+insert_end('Exercises') -> eseseses
+
+s = input("enter a string: ")
+if (s.__len__()<3):
+  print("enter a long string!")
+else:
+  s1= s[-2] + s[-1]
+  print(s1*4)
+
+
